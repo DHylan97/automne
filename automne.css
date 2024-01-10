@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "Lato";
+    src: url("Lato/Lato-Regular.ttf");
+}
+
+* {
+    margin: 0px;
+    text-align: justify;
+}
+
+.menu {
+    background-color: hsl(0, 0%, 20%);
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 5px 5px black;
+}
+
+.menu .main_pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .main_pages a {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu .main_pages a:hover {
+    color: #e2e2e2;
+    background-color: #616161;
+}
+
+.menu_elem {
+    font-size: x-large;
+    color: #DADADA;
+    padding: 20px;
+}
+
+
+.menu a:hover {
+    background-color: grey;
+}
+
+header,
+section,
+h1 {
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-family: "Lato";
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-size: xxx-large;
+    text-shadow: 5px 3px 3px black;
+}
+
+p {
+    font-size: larger;
+    padding-top: 15px;
+    font-family: "Lato";
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+a[href^="mailto"] {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: xx-large;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    margin: 0px 200px 25px 200px;
+    border-radius: 2em;
+    font-family: "Lato";
+}
+
+a[href^="mailto"]:hover {
+    background-color: black;
+    color: white;
+}
+
+.bgimg-1 {
+    background-image: url("images/chemin_automne.jpg");
+}
+
+.bgimg-2 {
+    background-image: url("images/monochrome/foret_background2.jpg");
+}
+
+.bgimg-3 {
+    background-image: url("images/monochrome/champignon.background.jpg");
+}
+
+.bgimg-4 {
+    background-image: url("images/monochrome/pont.jpg");
+}
+
+#frogonmush {
+    background-image: url("images/champignon/grenouille_champ.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 15px 0px;
+    height: 600px;
+    border-radius: 1em;
+}
+
+.scroll-page {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 700px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scroll-page2 {
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px 0px;
+}
+
+.containersecond {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.item {
+    background-color: white;
+    width: 400px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.item_imgimg-first {
+    background-image: url(images/champignon/champignon1.jpg);
+    background-size: cover;
+    height: 50%;
+    width: auto;
+    border-radius: 1em;
+}
+
+.item_imgimg-second {
+    background-image: url(images/champignon/champignon2.jpg);
+    background-size: cover;
+    height: 50%;
+    width: auto;
+    border-radius: 1em;
+}
+
+.item_imgimg-third {
+    background-image: url(images/champignon/champignon3.jpg);
+    background-size: cover;
+    height: 50%;
+    width: auto;
+    border-radius: 1em;
+}
+
+.card {
+    color: black;
+}
+
+.card h3,
+.card p {
+    padding: 25px 0px;
+    text-align: center;
+}
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+/* ------------------------------------ */
+/*media queries pour le responsive*/
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: block;
+        position: static;
+        width: 100%;
+    }
+
+    .menu .main_pages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a[href^="mailto"] {
+        margin: 0 auto 25px auto;
+    }
+
+    #frogonmush {
+        height: 300px;
+    }
+
+    .scroll-page,
+    .scroll-page2 {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+    .containersecond {
+        margin: 250px auto;
+        flex-direction: column;
+    }
+
+    .item {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .item_imgimg-first,
+    .item_imgimg-second,
+    .item_imgimg-third {
+        height: 150px;
+    }
+
+    article {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
