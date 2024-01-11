@@ -1,4 +1,4 @@
-# Création d'un site web en html et css sur le thème de l'automne
+# Création d'un site web en html et css sur le thème de l'automne avec prise en charge du responsive
 
 ![Capture d'écran 2024-01-10 200215](https://github.com/DHylan97/automne/assets/86422525/0aafb60c-193f-4bc8-b1bc-0f75f47af891)
 
